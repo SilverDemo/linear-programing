@@ -1,0 +1,46 @@
+[
+    {
+        "name": "This is ignored task used for comment",
+        "param": "comment",
+        "type1": "+ mean U[i+1] = U[i] + arg",
+        "type2": "increase mean U[i+1] = U[i] + arg * U[0]",
+        "type3": "more mean U[i+1] = U[i] + arg * U[i]",
+        "active": false
+    },
+    {
+        "name": "backorderanalysis",
+        "param": "b_i",
+        "type": "+",
+        "arg": 0.02,
+        "iteration_count": 3,
+        "watch_list":
+        ["BO_ijt","backorder_cost"
+        ], 
+        "active": true
+    },
+    {
+        "name": "name_gi_do2",
+        "param": "TR_t",
+        "type": "increase",
+        "arg": -0.05,
+        "iteration_count": 5,
+        "watch_list": ["BO_ijt"],
+        "active": false
+    },
+    {
+        "name": "name_gi_do3",
+        "param": "Max_P_ij",
+        "type": "increase",
+        "arg": 0.05,
+        "iteration_count": 5,
+        "active": false
+    },
+    {
+        "name": "name_gi_do4",
+        "param": "T_C_jk",
+        "type": "more",
+        "arg": 0.1,
+        "iteration_count": 2,
+        "active": false
+    }
+]
